@@ -37,3 +37,8 @@ function imprimeIdade() {
       let hello = nome => `Olá, ${nome}!`
       let nome = 'Ivan';
       console.log(hello(nome));
+
+      let nomeCompleto = (nome1, sobrenome) => `${nome1} ${sobrenome}`
+      let nome1 = 'Ivan';
+      let sobrenome = 'Pires';
+      console.log(nomeCompleto(nome1, sobrenome));
