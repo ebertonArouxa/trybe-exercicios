@@ -34,3 +34,5 @@ let names = {
   for (let key in car) {
     console.log(key, car[key]);
   }
+
+  function addProperty(nome, eMail, telefone, GitHub, LinkedIn)
