@@ -33,3 +33,7 @@ function imprimeIdade() {
 
       let numeroAleatorio = () => Math.random();
       console.log(numeroAleatorio());
+
+      let hello = nome => `Olá, ${nome}!`
+      let nome = 'Ivan';
+      console.log(hello(nome));
