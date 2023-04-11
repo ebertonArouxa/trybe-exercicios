@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="parent-of-parent">
+  <section id="parent">
+    <section id="first-child"></section>
+    <section id="where-are-you">
+      <section id="first-child-of-child"></section>
+    </section>
+    Attention!
+    <section id="third-child"></section>
+    <section id="fourth-and-last-child"></section>
+  </section>
+  <script>
+   let sessao = document.getElementById('where-are-you');
+   let parent = sessao.parentElement;
+   parent.style.color = 'blue';
+   let primeiroFilho = document.getElementById('first-child-of-child');
+   primeiroFilho.innerText = 'esse é o primeiro filho';
+   let primeiroFilho2 = parent.firstElementChild;
+   let irmaoAnterior = sessao.previousElementSibling;
+   let atencao = sessao.nextSibling;
+   let terceiroFilho = sessao.nextElementSibling;
+   let terceiroFilho2 = parent.lastElementChild.previousElementSibling;
+  </script>
+</main>
+</body>
+</html>
